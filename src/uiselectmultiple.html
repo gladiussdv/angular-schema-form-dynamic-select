@@ -6,8 +6,8 @@
     <ui-select multiple sortable-options="{{form.sortableOptions}}" ng-model="internalModel" theme="bootstrap"
                on-select="$$value$$.push($item.value)" on-remove="$$value$$.splice($$value$$.indexOf($item.value), 1)"
                class="{{form.options.uiClass}}">
-      <ui-select-match placeholder="{{form.placeholder || form.schema.placeholder || ('placeholders.select' | translate)}}">{{$item.name}}</ui-select-match>
-      <ui-select-choices repeat="item in form.titleMap | propsFilter: {name: $select.search}"
+      <ui-select-match class="ui-select-match" placeholder="{{form.placeholder || form.schema.placeholder || ('placeholders.select' | translate)}}">{{$item.name}}</ui-select-match>
+      <ui-select-choices class="ui-select-choices" repeat="item in form.titleMap | propsFilter: {name: $select.search}"
          refresh="populateTitleMap(form, $select.search)"
          refresh-delay="form.options.refreshDelay">
         <div ng-bind-html="item.name | highlight: $select.search"></div>
