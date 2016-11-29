@@ -29,7 +29,7 @@ angular.module('schemaForm').config(
 
             //Add to the bootstrap directive
             schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'strapselect',
-                'directives/decorators/bootstrap/strap/strapselect.html')
+                'directives/decorators/bootstrap/strap/strapselect.html');
             schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'strapmultiselect',
                 'directives/decorators/bootstrap/strap/strapmultiselect.html');
 
@@ -43,11 +43,11 @@ angular.module('schemaForm').config(
             // UI SELECT
             //Add to the bootstrap directive
             schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'uiselect',
-                'directives/decorators/bootstrap/uiselect/uiselect.html')
+                'directives/decorators/bootstrap/uiselect/uiselect.html');
 
 
             schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'uiselectmultiple',
-                'directives/decorators/bootstrap/uiselect/uiselectmultiple.html')
+                'directives/decorators/bootstrap/uiselect/uiselectmultiple.html');
 
 
         }])
@@ -437,5 +437,5 @@ angular.module('schemaForm').filter('selectFilter', [function ($filter) {
     };
 }]);
 
-return angularSchemaFormDynamicSelect;
+return ;
 }));
